@@ -1,2 +1,0 @@
-# ooop
-todolist
