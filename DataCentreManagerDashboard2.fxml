@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="798.0" prefWidth="906.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bsccl.Bushra.DataCentreManager.DataCentreManagerDashboard2Controller">
+   <children>
+      <Label layoutX="361.0" layoutY="71.0" text="Data Centre Manager Dashboard" />
+      <Button layoutX="421.0" layoutY="145.0" mnemonicParsing="false" onAction="#SeeTasksOnClick" text="See Tasks" />
+      <Button layoutX="421.0" layoutY="200.0" mnemonicParsing="false" onAction="#PurchaseReqOnClick" text="Purchase Request" />
+      <Button layoutX="421.0" layoutY="267.0" mnemonicParsing="false" onAction="#ExpRequirementOnClick" text="Expenditure Requirement" />
+      <Button layoutX="421.0" layoutY="329.0" mnemonicParsing="false" onAction="#ViewSecurityControlOnClick" text="Security Control" />
+      <Button layoutX="421.0" layoutY="384.0" mnemonicParsing="false" onAction="#ViewDisasterPlanOnClick" text="View Disaster Plan" />
+      <Button layoutX="421.0" layoutY="445.0" mnemonicParsing="false" onAction="#ViewSoldBundleOnClick" text="View Sold Bundle Report" />
+      <Button layoutX="421.0" layoutY="511.0" mnemonicParsing="false" onAction="#ViewCustomerComplaintOnClick" text="View Customer Complaints" />
+      <Button layoutX="421.0" layoutY="577.0" mnemonicParsing="false" onAction="#ServerCapacityChangesOnClick" text="Server Capacity " />
+      <Button layoutX="432.0" layoutY="638.0" mnemonicParsing="false" onAction="#LogoutOnClick" text="Logout" />
+   </children>
+</AnchorPane>

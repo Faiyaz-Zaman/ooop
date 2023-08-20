@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="696.0" prefWidth="873.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bsccl.Bushra.AccountsOfficer.ManagePurchaseReqOfDcController">
+   <children>
+      <TableView fx:id="ManagePurchaseRequestTableView" layoutX="207.0" layoutY="85.0" prefHeight="329.0" prefWidth="439.0">
+        <columns>
+          <TableColumn fx:id="BudgetOfPurchaseReq" prefWidth="219.0" text="Budget " />
+          <TableColumn fx:id="PurchaseDetails" prefWidth="203.0" text="Purchase Request Details" />
+        </columns>
+      </TableView>
+      <Button layoutX="70.0" layoutY="602.0" mnemonicParsing="false" onAction="#ReturnToDashboardOnClick" text="Back to Dashboard" />
+      <Button layoutX="200.0" layoutY="471.0" mnemonicParsing="false" onAction="#AcceptPurchaseRequestOnClick" text="Accept Purchase Request" />
+      <Button layoutX="470.0" layoutY="471.0" mnemonicParsing="false" onAction="#DenyPurchaseRequestOnClick" text="Deny Purchase Request" />
+   </children>
+</AnchorPane>

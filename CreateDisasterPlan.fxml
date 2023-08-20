@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bsccl.Bushra.DataCentreManager.CreateDisasterPlanController">
+   <children>
+      <Label layoutX="35.0" layoutY="96.0" text="Type of Disaster" />
+      <Label layoutX="309.0" layoutY="96.0" text="Impact Level" />
+      <Label layoutX="41.0" layoutY="191.0" text="Response Plan" />
+      <Label fx:id="ResponsibleTeamTextField" layoutX="291.0" layoutY="191.0" text="Responsible Team" />
+      <TextField fx:id="TypeOfDisasterTextField" layoutX="153.0" layoutY="91.0" prefHeight="31.0" prefWidth="88.0" />
+      <TextField fx:id="ResponsePlanTextField" layoutX="153.0" layoutY="185.0" prefHeight="31.0" prefWidth="88.0" />
+      <TextField fx:id="ImpactLevelTextField" layoutX="442.0" layoutY="91.0" prefHeight="31.0" prefWidth="88.0" />
+      <TextField fx:id="ResponsibleTeamTextField" layoutX="442.0" layoutY="186.0" prefHeight="31.0" prefWidth="88.0" />
+      <Button layoutX="60.0" layoutY="334.0" mnemonicParsing="false" onAction="#BackToPlanTableOnClick" text="Back to Recovery Plans" />
+      <Button layoutX="218.0" layoutY="254.0" mnemonicParsing="false" onAction="#SaveNewPlanOnClick" text="Save the New Plan" />
+      <Label layoutX="218.0" layoutY="29.0" text="ADD A NEW PLAN">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

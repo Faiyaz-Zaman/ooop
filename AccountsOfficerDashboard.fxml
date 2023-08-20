@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="695.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bsccl.Bushra.AccountsOfficer.AccountsOfficerDashboardController">
+   <children>
+      <Label layoutX="191.0" layoutY="63.0" text="ACCONTS OFFICER DASHBOARD" />
+      <Button layoutX="55.0" layoutY="289.0" mnemonicParsing="false" onAction="#ViewBills" prefHeight="31.0" prefWidth="127.0" text="Customer Bill" />
+      <Button layoutX="203.0" layoutY="289.0" mnemonicParsing="false" onAction="#ViewPurchaseReq" text="Manage Purchase Request" />
+      <Button layoutX="417.0" layoutY="289.0" mnemonicParsing="false" onAction="#ViewPastRecords" prefHeight="31.0" prefWidth="147.0" text="Past Records" />
+      <Button layoutX="55.0" layoutY="348.0" mnemonicParsing="false" onAction="#ViewFinanceReport" prefHeight="31.0" prefWidth="127.0" text="Finance Report" />
+      <Button layoutX="202.0" layoutY="356.0" mnemonicParsing="false" onAction="#ViewSalary" prefHeight="31.0" prefWidth="195.0" text="Salary of Employees" />
+      <Button layoutX="417.0" layoutY="356.0" mnemonicParsing="false" onAction="#ViewRefundApplication" text="Refund Application" />
+      <Button layoutX="268.0" layoutY="611.0" mnemonicParsing="false" onAction="#LogoutFromDashboardOnClick" text="Logout" />
+      <Button layoutX="202.0" layoutY="419.0" mnemonicParsing="false" onAction="#ExpenditureReqOnClick" prefHeight="31.0" prefWidth="195.0" text="Expenditure Requirement" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="504.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bsccl.Faiyaz.Customer.SupportticketsController">
+   <children>
+      <RadioButton fx:id="solvedradiobutton" layoutX="117.0" layoutY="51.0" mnemonicParsing="false" text="solved">
+         <toggleGroup>
+            <ToggleGroup fx:id="filter" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="pendingradiobutton" layoutX="236.0" layoutY="51.0" mnemonicParsing="false" text="pending" toggleGroup="$filter" />
+      <RadioButton fx:id="allradiobutton" layoutX="342.0" layoutY="51.0" mnemonicParsing="false" text="all" toggleGroup="$filter" />
+      <Label layoutX="33.0" layoutY="51.0" text="Filter:" />
+      <Button layoutX="480.0" layoutY="47.0" mnemonicParsing="false" onAction="#applyfilter" text="Apply" />
+      <TableView fx:id="supportticketstable" layoutX="105.0" layoutY="127.0" prefHeight="200.0" prefWidth="601.0">
+        <columns>
+          <TableColumn fx:id="customerid" prefWidth="111.0" text="Customer ID" />
+          <TableColumn fx:id="customername" prefWidth="102.0" text="Customer Name" />
+            <TableColumn fx:id="typeofproblem" prefWidth="129.0" text="type of Problem" />
+            <TableColumn fx:id="problemdescription" prefWidth="129.0" text="Problem description" />
+            <TableColumn fx:id="statustablecolumn" prefWidth="129.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="48.0" layoutY="436.0" mnemonicParsing="false" onAction="#returnbutton" text="Return to Dashboard" />
+      <Button layoutX="560.0" layoutY="418.0" mnemonicParsing="false" onAction="#sendnotificationtocustomerbutton" prefHeight="58.0" prefWidth="212.0" text="Send Notification to Customer" />
+      <Button layoutX="256.0" layoutY="423.0" mnemonicParsing="false" onAction="#sendtonetworkengineers" prefHeight="48.0" prefWidth="238.0" text="send notification to Network Engineers" />
+   </children>
+</AnchorPane>

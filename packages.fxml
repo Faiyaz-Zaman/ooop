@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="643.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bsccl.Faiyaz.Customer.PackagesController">
+   <children>
+      <Label fx:id="customernametext" layoutX="62.0" layoutY="58.0" prefHeight="17.0" prefWidth="70.0" text="User Name:" />
+      <ComboBox fx:id="packagecombobox" layoutX="235.0" layoutY="46.0" prefWidth="150.0" promptText="packages" />
+      <Button layoutX="74.0" layoutY="515.0" mnemonicParsing="false" onAction="#returnbutton" prefHeight="36.0" prefWidth="70.0" text="Return" />
+      <Button layoutX="555.0" layoutY="515.0" mnemonicParsing="false" onAction="#buypackagesbutton" prefHeight="36.0" prefWidth="83.0" text="Buy Package" />
+      <Label fx:id="idlabeltext" layoutX="62.0" layoutY="85.0" prefHeight="17.0" prefWidth="70.0" text="User ID:" />
+      <Label fx:id="customernamelabel" layoutX="132.0" layoutY="58.0" />
+      <Label fx:id="idlabeltext" layoutX="109.0" layoutY="85.0" />
+      <Button layoutX="123.0" layoutY="238.0" mnemonicParsing="false" onAction="#loadbinfilebutton" prefHeight="48.0" prefWidth="199.0" text="Load in bin file" />
+      <DatePicker fx:id="dobbuyingpackage" layoutX="163.0" layoutY="135.0" />
+      <Label layoutX="20.0" layoutY="139.0" prefHeight="17.0" prefWidth="133.0" text="date on buying package:" />
+      <TableView fx:id="packagestableview" layoutX="89.0" layoutY="301.0" prefHeight="200.0" prefWidth="531.0">
+        <columns>
+          <TableColumn fx:id="customernametablecolumn" prefWidth="112.0" text="Customer Name" />
+          <TableColumn fx:id="customeridtablecolumn" prefWidth="118.0" text="Customer ID" />
+            <TableColumn fx:id="dobpackagestablecolumn" prefWidth="147.0" text="date on buying package" />
+            <TableColumn fx:id="packageidtablecolumn" prefWidth="75.0" text="package ID" />
+            <TableColumn fx:id="amounttablecolumn" prefWidth="75.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Label fx:id="amountlabel" layoutX="439.0" layoutY="38.0" text="Amount:" />
+      <Button layoutX="495.0" layoutY="137.0" mnemonicParsing="false" onAction="#showamountbutton" prefHeight="36.0" prefWidth="108.0" text="show amount" />
+   </children>
+</AnchorPane>

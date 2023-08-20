@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="679.0" prefWidth="884.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bsccl.Bushra.DataCentreManager.ViewTaskController">
+   <children>
+      <TableView fx:id="ViewTaskTableView" layoutX="78.0" layoutY="99.0" prefHeight="347.0" prefWidth="690.0">
+        <columns>
+          <TableColumn fx:id="DateColumn" prefWidth="75.0" text="Date" />
+          <TableColumn fx:id="EmployeeIDColumn" prefWidth="160.0" text="Employee ID " />
+            <TableColumn fx:id="TaskPriorityColumn" prefWidth="116.0" text="Task Priority" />
+            <TableColumn fx:id="TaskStatusColumn" prefWidth="183.0" text="Task Status" />
+            <TableColumn fx:id="TaskDetailsColumn" prefWidth="155.0" text="Task Details" />
+        </columns>
+      </TableView>
+      <Button layoutX="653.0" layoutY="457.0" mnemonicParsing="false" onAction="#AddNewTaskOnClick" text="Add New Task" />
+      <Button layoutX="30.0" layoutY="610.0" mnemonicParsing="false" onAction="#ReturnToDashbaordOnclick" text="Back to Dashboard" />
+   </children>
+</AnchorPane>

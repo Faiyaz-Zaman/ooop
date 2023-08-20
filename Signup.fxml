@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="530.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Bsccl.Main.SignupController">
+   <children>
+      <Label layoutX="40.0" layoutY="32.0" text="name:" />
+      <Label layoutX="48.0" layoutY="82.0" text="ID:" />
+      <Label layoutX="29.0" layoutY="132.0" text="Password:" />
+      <Label layoutX="34.0" layoutY="186.0" text="Address:" />
+      <Label layoutX="33.0" layoutY="236.0" text="Email:" />
+      <Label layoutX="497.0" layoutY="198.0" text="Contactno:" />
+      <DatePicker fx:id="dobpicker" layoutX="620.0" layoutY="53.0" />
+      <DatePicker fx:id="dojpicker" layoutX="620.0" layoutY="128.0" />
+      <Label layoutX="490.0" layoutY="57.0" text="Date Of Birth:" />
+      <Label layoutX="492.0" layoutY="134.0" text="Date Of Join:" />
+      <TextField fx:id="idtextfield" layoutX="107.0" layoutY="78.0" />
+      <TextField fx:id="emailtxtfield" layoutX="107.0" layoutY="232.0" />
+      <TextField fx:id="contacttxtfield" layoutX="620.0" layoutY="194.0" prefHeight="25.0" prefWidth="174.0" />
+      <TextField fx:id="addresstxtfield" layoutX="107.0" layoutY="186.0" />
+      <TextField fx:id="passwordtxtfield" layoutX="107.0" layoutY="130.0" />
+      <TextField fx:id="nametextfield" layoutX="107.0" layoutY="28.0" />
+      <Button layoutX="64.0" layoutY="427.0" mnemonicParsing="false" onAction="#returnbutton" prefHeight="34.0" prefWidth="99.0" text="Return" />
+      <Button layoutX="683.0" layoutY="427.0" mnemonicParsing="false" onAction="#signupbutton" prefHeight="34.0" prefWidth="111.0" text="Signup" />
+      <ComboBox fx:id="usertypecombobox" layoutX="620.0" layoutY="257.0" prefWidth="150.0" promptText="UserType?" />
+   </children>
+</AnchorPane>
